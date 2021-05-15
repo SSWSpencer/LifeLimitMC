@@ -1,0 +1,37 @@
+# ============== Configuration ==============
+# Config.yml will definitely get long as time progresses, so here's an outline of what there is to configure
+#  
+# Quick refresh on data types (if you don't know them). Syntax is important in this config file.
+# [String]: A word or phase surrounded by quotes-- "foo", "bar", "baz", "00:00:00"
+# [Integer]: A whole number between -2147483647 and 2147483647, not surrounded by quotes-- 1, 2, 18, 52, 1597823
+# [Boolean]: A true or false value, not surrounded by quotes-- true, false
+# 
+#
+# - [field]: [Value data type] [Description of what the specific field does]
+# - reloadMessage: [String] sets the success message returned when running /lifelimit reload
+#
+# - resetLivesTime: [String] sets the time that all players' current lives will reset to their daily life cap
+#
+# - globalDefaultLives: [Integer] sets the default number of daily lives a player will join the server with
+# 
+# - firstTimeLoginCurrentLives: [Integer] sets the number of daily lives a player will have upon joining the server for the first time
+#
+# - autoRespawn: [Boolean] sets whether or not players go into spectator mode every time they die, or only when they run out of lives. 
+#      true: players respawn in survival mode until they run out of lives
+#      false: players respawn in spectator mode after every death and have to perform /respawn
+# 
+# - spectatorsMuted: [Boolean] sets whether or not players in spectator mode can chat with players in survival mode
+# 
+#  - opsSeeSpectators: [Boolean] sets whether or not spectator chat will be visible to server operators
+
+
+# =============== Important Notes ===============
+# Plugin Data (playerDailyLives and playerCurrentLives)
+# It is recommended that you not edit these values in here, as it can cause the plugin to either break or lose data. 
+# However, if you must, both playerDailyLives and playerCurrentLives take strings containing a 32-character UUID (including 4 hypens), followed by a colon and a space, then the player username, followed by a colon and space, and then an integer value
+# Formatted, it will look like - "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx: Player_Name: 1" (the colons and spaces are important parts of the formatting and removing them will cause issues)
+# Changing the UUID will 100% cause a loss of data and possibly break the plugin entirely
+# Changing a player name will likely not affect anything. There is a small possibility that it will break the plugin, but there should be no reason to change a player's name in here, because if they change their name via minecraft.net, their UUID will stay the same and it will auto-update their name in here
+# Changing a player's daily/current life count is the only thing that you should be touching below here, and it won't even update until you /reload the server, whereas changing the values via commands will take immediate effect.
+  
+# Do not remove the placeholder line (- "UUID, Username, Life Count") until data has been generated and saved. You don't have to ever remove it, but if you like clean files with no dummy data, wait until after. Doing so prior to having any data will cause an index out of bounds error when trying to insert the first player
