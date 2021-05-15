@@ -1,0 +1,21 @@
+
+reload_message: "Life Limit Reloaded!"
+
+resetLivesTime: "00:00:00"
+
+globalDefaultLives: 1
+
+firstTimeLoginCurrentLives: 3
+
+autoRespawn: false
+  
+spectatorsMuted: true
+
+opsSeeSpectators: true
+
+playerDailyLives:
+- "UUID, Username, Life Count"
+
+
+playerCurrentLives:
+- "UUID, Username, Life Count"

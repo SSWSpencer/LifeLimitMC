@@ -1,0 +1,14 @@
+main: me.SSWS.LifeLimit.Main
+name: LifeLimit
+version: 1.0
+author: https://github.com/SSWSpencer
+
+commands:
+  LifeLimit:
+    description: LifeLimit adminstrator commands
+  Respawn:
+    description: Respawn yourself back in survival mode after dying
+  LifeCount: 
+    description: View the number of lives you have left today
+  LifeTime:
+    description: View the amount of time before daily life count is reset

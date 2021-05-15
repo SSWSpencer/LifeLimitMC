@@ -1,0 +1,3 @@
+module LifeLimit {
+	requires spigot;
+}
