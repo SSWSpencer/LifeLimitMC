@@ -57,3 +57,26 @@ This value sets whether or not a dead player will be able to have their chat see
 #### playerDailyLives: [Plugin Data, do not modify]
 
 #### playerCurrentLives: [Plugin Data, do not modify]
+
+
+# Installation
+Simply place LifeLimit.jar inside of the plugins directory of your server, and then restart the server
+
+# Commands
+#### /lifelimit help
+- Shows a list of all available commands
+
+#### /lifelimit reload
+- Reloads the plugin (will not affect any of the current data)]
+
+#### /lifelimit dailyReset
+- Resets players current lives to their daily life count cap (will not affect players lives if they have more than their daily cap)
+
+#### /lifelimit dailyResetHard
+- Resets all players current lives to their daily life count cap (will reset lives of players who have more than their daily cap)
+ 
+#### /lifelimit set daily [player] [amount]
+- Sets the daily number of lives a specific player will have
+
+#### /lifelimit set current [player] [amount]
+- Sets the current number of lives a specific player has
